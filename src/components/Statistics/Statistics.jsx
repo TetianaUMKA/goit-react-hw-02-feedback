@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Notification } from 'components/Notification/Notification';
 
 export const Statistics = ({
@@ -38,4 +40,12 @@ export const Statistics = ({
       </li>
     </ul>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };

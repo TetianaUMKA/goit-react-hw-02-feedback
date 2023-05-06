@@ -7,7 +7,7 @@ export const FeedbackItem = styled.li`
 `;
 
 export const FeedbackBtn = styled.button`
-  width: 100px;
+  width: 120px;
   padding: 10px;
   border-radius: 4px;
   border: transparent;

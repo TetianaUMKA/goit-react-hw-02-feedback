@@ -4,6 +4,11 @@ export const SiteSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding-top: 40px;
+  gap: 30px;
+  padding-top: 60px;
+  font-size: 20px;
+`;
+
+export const Title = styled.h2`
+  font-size: 36px;
 `;

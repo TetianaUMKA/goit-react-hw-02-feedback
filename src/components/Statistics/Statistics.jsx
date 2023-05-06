@@ -3,6 +3,8 @@ import { CiFaceSmile, CiFaceMeh, CiFaceFrown } from 'react-icons/ci';
 
 import { Notification } from 'components/Notification/Notification';
 
+import { StatItem, StatItemData } from './Statistics.styled';
+
 export const Statistics = ({
   good,
   neutral,
@@ -14,43 +16,30 @@ export const Statistics = ({
     <Notification message="There is no feedback" />
   ) : (
     <ul>
-      <li>
-        <p>
-          Good{' '}
-          <span>
-            <CiFaceSmile />
-          </span>
-          : <span>{good}</span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Neutral{' '}
-          <span>
-            <CiFaceMeh />
-          </span>
-          : <span>{neutral}</span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Bad{' '}
-          <span>
-            <CiFaceFrown />
-          </span>
-          : <span>{bad}</span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Total: <span>{total}</span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Positive feedback: <span>{positivePercentage}%</span>
-        </p>
-      </li>
+      <StatItem>
+        <StatItemData>
+          Good
+          <CiFaceSmile size="20" />: {good}
+        </StatItemData>
+      </StatItem>
+      <StatItem>
+        <StatItemData>
+          Neutral
+          <CiFaceMeh size="20" />: {neutral}
+        </StatItemData>
+      </StatItem>
+      <StatItem>
+        <StatItemData>
+          Bad
+          <CiFaceFrown size="20" />: {bad}
+        </StatItemData>
+      </StatItem>
+      <StatItem>
+        <StatItemData>Total: {total}</StatItemData>
+      </StatItem>
+      <StatItem>
+        <StatItemData>Positive feedback: {positivePercentage}%</StatItemData>
+      </StatItem>
     </ul>
   );
 };

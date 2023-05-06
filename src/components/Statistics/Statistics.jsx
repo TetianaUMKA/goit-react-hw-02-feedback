@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { CiFaceSmile, CiFaceMeh, CiFaceFrown } from 'react-icons/ci';
 
 import { Notification } from 'components/Notification/Notification';
 
@@ -15,17 +16,29 @@ export const Statistics = ({
     <ul>
       <li>
         <p>
-          Good: <span>{good}</span>
+          Good{' '}
+          <span>
+            <CiFaceSmile />
+          </span>
+          : <span>{good}</span>
         </p>
       </li>
       <li>
         <p>
-          Neutral: <span>{neutral}</span>
+          Neutral{' '}
+          <span>
+            <CiFaceMeh />
+          </span>
+          : <span>{neutral}</span>
         </p>
       </li>
       <li>
         <p>
-          Bad: <span>{bad}</span>
+          Bad{' '}
+          <span>
+            <CiFaceFrown />
+          </span>
+          : <span>{bad}</span>
         </p>
       </li>
       <li>

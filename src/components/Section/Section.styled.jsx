@@ -4,7 +4,7 @@ export const SiteSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   padding-top: 60px;
 `;
 

@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
-import { FeedbackItem, FeedbackBtn } from './FeedbackOptions.styled';
+import { FeedbackList, FeedbackBtn } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <ul>
+    <FeedbackList>
       {options.map(option => (
-        <FeedbackItem key={option}>
+        <li key={option}>
           <FeedbackBtn
             type="button"
             aria-label="Leave feedback"
@@ -14,9 +14,9 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           >
             {option}
           </FeedbackBtn>
-        </FeedbackItem>
+        </li>
       ))}
-    </ul>
+    </FeedbackList>
   );
 };
 

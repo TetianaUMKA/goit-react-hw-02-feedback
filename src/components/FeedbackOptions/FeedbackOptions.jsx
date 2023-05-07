@@ -7,7 +7,11 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <ul>
       {options.map(option => (
         <FeedbackItem key={option}>
-          <FeedbackBtn type="button" onClick={() => onLeaveFeedback(option)}>
+          <FeedbackBtn
+            type="button"
+            aria-label="Leave feedback"
+            onClick={() => onLeaveFeedback(option)}
+          >
             {option}
           </FeedbackBtn>
         </FeedbackItem>

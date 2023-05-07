@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-export const FeedbackItem = styled.li`
-  :not(:last-child) {
-    margin-bottom: 10px;
-  }
+export const FeedbackList = styled.ul`
+  display: flex;
+  gap: 10px;
 `;
 
 export const FeedbackBtn = styled.button`

@@ -19,19 +19,19 @@ export const Statistics = ({
       <StatItem>
         <StatItemData>
           Good
-          <CiFaceSmile size="24" />: {good}
+          <CiFaceSmile size="28" />: {good}
         </StatItemData>
       </StatItem>
       <StatItem>
         <StatItemData>
           Neutral
-          <CiFaceMeh size="24" />: {neutral}
+          <CiFaceMeh size="28" />: {neutral}
         </StatItemData>
       </StatItem>
       <StatItem>
         <StatItemData>
           Bad
-          <CiFaceFrown size="24" />: {bad}
+          <CiFaceFrown size="28" />: {bad}
         </StatItemData>
       </StatItem>
       <StatItem>

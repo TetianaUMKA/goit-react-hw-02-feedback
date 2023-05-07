@@ -16,5 +16,6 @@ export const StatItem = styled.li`
 
 export const StatItemData = styled.p`
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  font-size: 26px;
 `;

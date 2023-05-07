@@ -8,6 +8,7 @@ export const FeedbackList = styled.ul`
 export const FeedbackBtn = styled.button`
   width: 120px;
   padding: 10px;
+  font-size: 20px;
   border-radius: 4px;
   border: transparent;
   background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);

@@ -6,9 +6,8 @@ export const SiteSection = styled.section`
   align-items: center;
   gap: 30px;
   padding-top: 60px;
-  font-size: 20px;
 `;
 
 export const Title = styled.h2`
-  font-size: 36px;
+  font-size: 42px;
 `;
